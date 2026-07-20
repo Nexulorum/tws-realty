@@ -1,0 +1,65 @@
+/* CTA 003 — Final Decision CTA */
+
+.cta-003 {
+  padding-block: var(--section-padding-lg);
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0,255,136,0.12),
+      transparent 35%
+    ),
+    var(--color-bg);
+}
+
+.cta-003__inner {
+  width: min(100% - 2rem, 980px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.cta-003__title {
+  margin-bottom: var(--space-4);
+  font-size: clamp(2.7rem, 6vw, 6rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.cta-003__text {
+  max-width: var(--text-width-md);
+  margin-inline: auto;
+  margin-bottom: var(--space-5);
+  color: var(--color-muted);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.cta-003__values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+
+.cta-003__values li {
+  padding: 0.75rem 1rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+
+@media (max-width: 560px) {
+  .cta-003 {
+    padding-block: var(--section-padding-md);
+  }
+
+  .cta-003__title {
+    font-size: clamp(2.2rem, 12vw, 3.6rem);
+  }
+
+  .cta-003 .btn {
+    width: 100%;
+  }
+}

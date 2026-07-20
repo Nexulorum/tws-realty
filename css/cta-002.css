@@ -1,0 +1,224 @@
+/* CTA 002 — Split Conversion CTA */
+
+.cta-002 {
+  padding-block:
+    var(--section-padding-lg);
+
+  background:
+    linear-gradient(
+      180deg,
+      white,
+      var(--color-bg)
+    );
+}
+
+.cta-002__inner {
+  width:
+    min(100% - 4rem, var(--container-hero));
+
+  margin-inline:
+    auto;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(420px, 0.9fr);
+
+  gap:
+    clamp(3rem, 6vw, 8rem);
+
+  align-items:
+    center;
+}
+
+/* =====================
+   CONTENT
+===================== */
+
+.cta-002__content {
+  max-width:
+    760px;
+}
+
+.cta-002__title {
+  margin-bottom:
+    var(--space-4);
+
+  font-size:
+    clamp(2.5rem, 5vw, 5.5rem);
+
+  line-height:
+    0.95;
+
+  letter-spacing:
+    -0.055em;
+
+  color: var(--color-primary);
+}
+
+.cta-002__text {
+  margin-bottom:
+    var(--space-5);
+
+  max-width:
+    var(--text-width-md);
+
+  color:
+    var(--color-muted);
+
+  font-size:
+    clamp(1rem, 1.5vw, 1.2rem);
+}
+
+/* =====================
+   VALUES
+===================== */
+
+.cta-002__values {
+  display:
+    grid;
+
+  gap:
+    var(--space-3);
+
+  margin-bottom:
+    var(--space-5);
+}
+
+.cta-002__values li {
+  position:
+    relative;
+
+  padding-left:
+    1.75rem;
+
+  font-size:
+    clamp(1rem, 1.3vw, 1.1rem);
+}
+
+.cta-002__values li::before {
+  content:
+    "✓";
+
+  position:
+    absolute;
+
+  left:
+    0;
+
+  color:
+    var(--color-secondary);
+
+  font-weight:
+    var(--weight-bold);
+}
+
+/* =====================
+   ACTIONS
+===================== */
+
+.cta-002__actions {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    var(--gap-sm);
+}
+
+/* =====================
+   MEDIA
+===================== */
+
+.cta-002__media img {
+  width:
+    100%;
+
+  min-height:
+    520px;
+
+  object-fit:
+    cover;
+
+  border-radius:
+    var(--image-radius-lg);
+
+  box-shadow:
+    var(--shadow-lg);
+}
+
+/* =====================
+   TABLET
+===================== */
+
+@media (max-width: 900px) {
+
+  .cta-002__inner {
+    grid-template-columns:
+      1fr;
+  }
+
+  .cta-002__content {
+    text-align:
+      center;
+
+    margin-inline:
+      auto;
+  }
+
+  .cta-002__text {
+    margin-inline:
+      auto;
+  }
+
+  .cta-002__actions {
+    justify-content:
+      center;
+  }
+
+  .cta-002__media {
+    max-width:
+      760px;
+
+    margin-inline:
+      auto;
+  }
+
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 560px) {
+
+  .cta-002 {
+    padding-block:
+      var(--section-padding-md);
+  }
+
+  .cta-002__inner {
+    width:
+      min(100% - 1.5rem, 100%);
+  }
+
+  .cta-002__title {
+    font-size:
+      clamp(2.2rem, 12vw, 3.6rem);
+  }
+
+  .cta-002__actions .btn {
+    width:
+      100%;
+  }
+
+  .cta-002__media img {
+    min-height:
+      340px;
+  }
+
+}

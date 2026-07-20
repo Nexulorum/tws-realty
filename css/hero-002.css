@@ -1,0 +1,245 @@
+/* =========================================================
+   HERO 002 — Centered Premium Hero
+========================================================= */
+
+.hero-002 {
+  position: relative;
+  min-height: var(--hero-height-lg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: var(--section-padding-xl);
+  padding-inline: var(--space-4);
+
+  background:
+    linear-gradient(
+      rgba(35, 64, 106, 0.58),
+      rgba(35, 64, 106, 0.72)
+    ),
+    url("/client-sites/tws-realty/images/hero-img.webp") center / cover no-repeat;
+
+  overflow: hidden;
+}
+
+.hero-002::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255,255,255,0.08),
+      transparent 45%
+    );
+
+  pointer-events: none;
+}
+
+.hero-002__overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(35, 64, 106, 0.12),
+      rgba(35, 64, 106, 0.52)
+    );
+
+  pointer-events: none;
+}
+
+.hero-002__inner {
+  position: relative;
+  z-index: 1;
+
+  width: min(100% - 2rem, var(--container-hero));
+  margin-inline: auto;
+
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+
+  text-align: center;
+}
+
+.hero-002__title {
+  max-width: 1050px;
+ color: white; 
+  font-size: clamp(3.25rem, 7vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.hero-002__text {
+  max-width: var(--text-width-lg);
+
+  color: rgba(255,255,255,0.88);
+
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: var(--line-relaxed);
+}
+
+.hero-002__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-sm);
+
+  margin-top: var(--space-3);
+}
+
+.hero-002__proof {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-md);
+
+  margin-top: var(--space-5);
+
+  color: rgba(255,255,255,0.78);
+
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+
+.hero-002__proof span {
+  padding: 0.65rem 1rem;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 999px;
+
+  backdrop-filter: blur(var(--blur-sm));
+}
+
+.hero-002 .eyebrow {
+  color: #f8f6f1;
+}
+
+.hero-002 .btn-outline{
+    color:#fff;
+    border:2px solid rgba(255,255,255,.9);
+    background:transparent;
+}
+
+.hero-002 .btn-outline:hover{
+    background:#fff;
+    color:var(--color-primary);
+    border-color:#fff;
+}
+
+/*glass effect
+*/
+.hero-002 .btn-outline{
+    color:#fff;
+    border:2px solid rgba(255,255,255,.9);
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+}
+.hero-002 .btn-outline:hover{
+    background:#fff;
+    color:var(--color-primary);
+}
+
+/* =====================
+   TABLET
+===================== */
+
+@media (max-width: 900px) {
+  .hero-002 {
+    min-height: 85vh;
+    padding-block: var(--section-padding-lg);
+  }
+
+  .hero-002__title{
+
+    width:100%;
+
+    max-width:100%;
+
+    font-size:clamp(2.15rem,11vw,3.35rem);
+
+    line-height:.95;
+
+    letter-spacing:-0.03em;
+
+    overflow-wrap:anywhere;
+
+  }
+
+  .hero-002__text {
+    max-width: 620px;
+  }
+  .hero-002__inner{
+
+    width:100%;
+
+    max-width:700px;
+
+    margin-inline:auto;
+
+    padding-inline:1rem;
+
+  }
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 560px) {
+  .hero-002 {
+    min-height: auto;
+    padding-block: var(--section-padding-lg);
+    padding-inline: var(--space-3);
+  }
+
+  .hero-002__inner{
+
+    width:100%;
+
+    max-width:700px;
+
+    margin-inline:auto;
+
+    padding-inline:1rem;
+
+  }
+
+  .hero-002__title{
+
+    width:100%;
+
+    max-width:100%;
+
+    font-size:clamp(2.15rem,11vw,3.35rem);
+
+    line-height:.95;
+
+    letter-spacing:-0.03em;
+
+    overflow-wrap:anywhere;
+
+  }
+
+  .hero-002__actions {
+    width: 100%;
+  }
+
+  .hero-002__actions .btn {
+    width: 100%;
+  }
+
+  .hero-002__proof {
+    gap: var(--space-2);
+  }
+
+  .hero-002__proof span {
+    width: 100%;
+  }
+}

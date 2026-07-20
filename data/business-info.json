@@ -1,0 +1,22 @@
+{
+  "businessName": "Example Cleaning Co.",
+  "ownerName": "John Doe",
+  "city": "Imperial",
+  "state": "MO",
+  "phone": "(555) 555-5555",
+  "email": "example@email.com",
+  "primaryService": "House Cleaning",
+  "secondaryServices": [
+    "Deep Cleaning",
+    "Move-Out Cleaning",
+    "Office Cleaning"
+  ],
+  "serviceAreas": [
+    "Imperial",
+    "Arnold",
+    "Festus",
+    "Barnhart"
+  ],
+  "tagline": "Reliable cleaning services for busy homeowners.",
+  "cta": "Request a Free Quote"
+}

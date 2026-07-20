@@ -1,0 +1,90 @@
+/* ==================================
+   SOCIAL PROOF 004
+   Founder Signature
+================================== */
+
+.social-proof-005 {
+  padding-block: clamp(6rem, 10vw, 10rem);
+
+  background: white;
+}
+
+.social-proof-005__container {
+  width: min(100% - 2rem, 900px);
+
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.social-proof-005__eyebrow {
+  margin-bottom: 3rem;
+
+  color: var(--color-accent);
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.2em;
+
+  font-size: 0.85rem;
+}
+
+.social-proof-005__portrait {
+  width: 250px;
+  height: 250px;
+
+  margin-inline: auto;
+  margin-bottom: 3rem;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+
+.social-proof-005__portrait img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center 12%;
+}
+
+.social-proof-005__statement {
+  max-width: 750px;
+
+  margin-inline: auto;
+
+  font-size: clamp(1.75rem, 3vw, 3rem);
+
+  color: var(--color-primary);
+
+  line-height: 1.25;
+
+  font-weight: 300;
+
+  letter-spacing: -0.03em;
+}
+
+.social-proof-005__signature {
+  margin-top: 3rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+
+.social-proof-005__name {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+
+  font-size: 1.2rem;
+
+  font-weight: 700;
+}
+
+.social-proof-005__title {
+  color: var(--color-secondary);
+}
+

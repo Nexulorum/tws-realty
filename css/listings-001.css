@@ -1,0 +1,196 @@
+.listings-001 {
+  background: var(--color-bg);
+  padding-block: var(--section-padding-lg);
+}
+
+.listings-001__inner {
+  display: grid;
+  gap: 2rem;
+}
+
+.listings-001__header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1.25rem;
+}
+
+.listings-001__header h2 {
+  max-width: 720px;
+  font-size: clamp(2.4rem, 5vw, 5rem);
+  line-height: .95;
+}
+
+.listings-001__view-all {
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.listings-001__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.listings-001__tabs button {
+  padding: 1rem 1.4rem;
+  color: var(--color-muted);
+  font-weight: 700;
+  border-bottom: 3px solid transparent;
+}
+
+.listings-001__tabs button:hover,
+.listings-001__tabs button.is-active {
+  color: var(--color-primary);
+  border-color: var(--color-accent);
+}
+
+.listings-001__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+}
+
+.property-card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform .22s ease, box-shadow .22s ease, opacity .22s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.property-card.is-hidden {
+  display: none;
+}
+
+.property-card__image {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.property-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform .45s ease;
+}
+
+.property-card:hover .property-card__image img {
+  transform: scale(1.06);
+}
+
+.property-card__badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: .45rem .75rem;
+  background: var(--color-secondary);
+  color: white;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.property-card__badge--soon {
+  background: var(--color-accent);
+}
+
+.property-card__body {
+  padding: 1.35rem;
+}
+
+.property-card__location {
+  margin-bottom: .4rem;
+  color: var(--color-secondary);
+  font-size: .9rem;
+  font-weight: 700;
+}
+.property-card__title,
+.property-card__body h3 {
+  color: var(--color-primary);
+}
+
+.property-card__body h3 {
+  margin-bottom: .85rem;
+  font-size: 1.45rem;
+}
+
+.property-card__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.property-card__details span:not(:last-child)::after {
+  content: "•";
+  margin-left: .65rem;
+  color: var(--color-muted);
+}
+
+.property-card__text {
+  margin-bottom: 1.1rem;
+  font-size: .95rem;
+  color: var(--color-muted);
+}
+
+.property-card__link {
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+.property-card__media {
+  position: relative;
+  display: block;
+  height: 240px;
+  overflow: hidden;
+}
+
+.property-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.45s ease;
+}
+
+.property-card:hover .property-card__media img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+  .listings-001__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .listings-001__header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .listings-001__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listings-001__tabs button {
+    flex: 1;
+  }
+}

@@ -1,0 +1,225 @@
+/*=============
+colors system
+=============*/
+
+:root {
+  --color-primary: #23406a;
+  --color-secondary: #2e5e4e;
+  --color-accent: #b84545;
+
+  --color-bg: #f8f6f1;
+  --color-surface: #ffffff;
+  --color-text: #23406a;
+  --color-muted: #5f6670;
+
+  /*overlay colors*/
+  --overlay-dark: rgba(0,0,0,0.55);
+  --overlay-medium: rgba(0,0,0,0.35);
+  --overlay-light: rgba(0,0,0,0.15);
+
+  --color-border: rgba(35, 64, 106, 0.14);
+  --color-border-strong: rgba(35, 64, 106, 0.24);
+
+  --color-primary-soft: rgba(35, 64, 106, 0.08);
+  --color-secondary-soft: rgba(46, 94, 78, 0.10);
+  --color-accent-soft: rgba(184, 69, 69, 0.10);
+
+  /*gradients system*/
+  --gradient-primary:
+    linear-gradient(
+      135deg,
+      #23406a,
+      #2e5e4e
+    );
+
+  
+
+}
+
+
+/*==================
+blur system
+===============*/
+:root {
+
+  --blur-sm: 6px;
+  --blur-md: 12px;
+  --blur-lg: 20px;
+
+}
+
+/*==================
+Button creation
+==================*/
+
+:root {
+
+
+  /*heights*/
+  --button-height-sm: 42px;
+  --button-height-md: 52px;
+  --button-height-lg: 64px;
+
+  /*padding*/ 
+  --button-padding-x: 1.25rem;
+  /*raius*/
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 40px;
+}
+
+/*=================
+image radius system
+===================*/
+:root {
+
+  --image-radius-sm: 12px;
+  --image-radius-md: 20px;
+  --image-radius-lg: 32px;
+
+}
+
+/*================
+Shadows
+====================*/
+:root {
+  --shadow-sm: 0 4px 10px rgba(0,0,0,0.08);
+  --shadow-md: 0 10px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 24px 60px rgba(0,0,0,0.18);
+}
+
+
+/*====================
+Layout
+=====================*/
+
+:root {
+  /*section padding*/
+  --section-padding: 6rem;
+  --section-padding-sm: 3rem;
+  --section-padding-md: 5rem;
+  --section-padding-lg: 7rem;
+  --section-padding-xl: 10rem;
+
+  /*container*/
+  --container-width: 1200px;
+  --container-xs: 640px;
+  --container-sm: 768px;
+  --container-md: 1024px;
+  --container-lg: 1200px;
+  --container-xl: 1440px;
+  --container-2xl: 1680px;
+  --container-hero: 1800px;
+
+  /*navbar heights*/
+  --navbar-height: 76px;
+  --navbar-height-mobile: 68px;
+  
+  /*gird gap system*/
+  --gap-xs: 0.5rem;
+  --gap-sm: 1rem;
+  --gap-md: 1.5rem;
+  --gap-lg: 2rem;
+  --gap-xl: 4rem;
+
+  /*text width*/
+  --text-width-sm: 40ch;
+  --text-width-md: 60ch;
+  --text-width-lg: 75ch;
+
+  /*hero heights*/
+  --hero-height-sm: 60vh;
+  --hero-height-md: 75vh;
+  --hero-height-lg: 100vh;
+
+  /*card system*/
+  --card-padding: 1.5rem;
+  --card-radius: 24px;
+  --card-shadow: var(--shadow-md);
+
+  /*form inputs*/
+  --input-height: 52px;
+  --input-radius: 14px;
+  --input-border: rgba(0,0,0,0.1);
+
+}
+
+
+/*===============
+z-index system
+===============*/
+:root {
+
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-overlay: 800;
+  --z-modal: 1000;
+  --z-toast: 1200;
+
+}
+
+
+/*=============
+transition system
+==================*/
+:root {
+
+  --transition-fast: 120ms ease;
+  --transition-normal: 180ms ease;
+  --transition-slow: 320ms ease;
+
+}
+
+/* =========================================================
+   FONT SYSTEM
+========================================================= */
+
+:root {
+
+  /* Primary Fonts */
+    --font-primary: "Glacial Indifference", sans-serif;
+    --font-accent: "Montserrat", Arial, sans-serif;
+
+  /* Font Weights */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+  --text-4xl: 4rem;
+  --text-5xl: 5rem;
+
+  /* Line Heights */
+  --line-tight: 1.1;
+  --line-normal: 1.5;
+  --line-relaxed: 1.8;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.03em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.05em;
+  
+  /*spacing*/
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+}
+

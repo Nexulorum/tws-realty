@@ -1,0 +1,318 @@
+/* =========================================================
+   RESPONSIVE.CSS
+   Purpose:
+   Global responsive scaling and breakpoint behavior
+   for all Nexulorum builds.
+========================================================= */
+
+
+/* =========================================================
+   1400px
+========================================================= */
+
+@media (max-width: 1400px) {
+
+  .container,
+  .container-xl {
+    width: min(100% - 3rem, var(--container-lg));
+  }
+
+}
+
+
+/* =========================================================
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  :root {
+    --section-padding-lg: 6rem;
+    --section-padding-xl: 8rem;
+  }
+
+  .display-xl {
+    font-size: clamp(3.5rem, 7vw, 6rem);
+  }
+
+  .display-lg {
+    font-size: clamp(3rem, 6vw, 5rem);
+  }
+
+}
+
+
+/* =========================================================
+   992px
+========================================================= */
+
+@media (max-width: 992px) {
+
+  :root {
+    --section-padding-md: 4rem;
+    --section-padding-lg: 5rem;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .split {
+    gap: var(--gap-lg);
+  }
+
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+  :root {
+    --section-padding-sm: 2.5rem;
+    --section-padding-md: 3rem;
+    --section-padding-lg: 4rem;
+    --section-padding-xl: 5rem;
+
+    --text-5xl: 4rem;
+    --text-4xl: 3rem;
+    --text-3xl: 2.5rem;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding-block: var(--section-padding-md);
+  }
+
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    width: min(100% - 1.5rem, 100%);
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-between {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-group {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+
+  .hero,
+  .hero-full {
+    min-height: auto;
+  }
+
+}
+
+
+/* =========================================================
+   576px
+========================================================= */
+
+@media (max-width: 576px) {
+
+  :root {
+    --text-5xl: 3.25rem;
+    --text-4xl: 2.5rem;
+    --text-3xl: 2rem;
+
+    --gap-lg: 1.5rem;
+    --gap-xl: 2rem;
+  }
+
+  .display-xl {
+    font-size: 3rem;
+  }
+
+  .display-lg {
+    font-size: 2.5rem;
+  }
+
+  .heading-xl {
+    font-size: var(--text-4xl);
+  }
+
+  .heading-lg {
+    font-size: var(--text-3xl);
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .btn-lg {
+    min-height: 56px;
+  }
+
+}
+
+
+/* =========================================================
+   400px
+========================================================= */
+
+@media (max-width: 400px) {
+
+  html {
+    font-size: 95%;
+  }
+
+  .display-xl {
+    font-size: 2.5rem;
+  }
+
+  .display-lg {
+    font-size: 2rem;
+  }
+
+}/* =========================================
+   TWS REALTY — MOBILE FIXES
+========================================= */
+
+/* Prevent page-wide horizontal overflow */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-002__actions,
+.home-hero__actions,
+.hero-001__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .hero-002__inner,
+  .home-hero__inner,
+  .hero-001__inner {
+    width: min(100% - 1.5rem, 100%);
+  }
+
+  .hero-002__actions,
+  .home-hero__actions,
+  .hero-001__actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-002__actions .btn,
+  .home-hero__actions .btn,
+  .hero-001__actions .btn {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    padding-inline: 1rem;
+
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* =========================================
+   ABOUT PAGE PORTRAIT
+========================================= */
+
+@media (max-width: 800px) {
+  .about-profile {
+    position: relative;
+    z-index: 2;
+  }
+
+  .about-profile__portrait {
+    position: relative;
+    z-index: 3;
+
+    margin-top: -90px;
+  }
+
+  /*
+    Keep the portrait from covering the hero buttons.
+    This adds room beneath the hero before the overlap begins.
+  */
+  .about-page .hero-002,
+  body.about-page .hero-002 {
+    padding-bottom: 8rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-profile__portrait {
+    width: min(210px, 64vw);
+    height: min(210px, 64vw);
+
+    margin-top: -75px;
+  }
+
+  .about-page .hero-002,
+  body.about-page .hero-002 {
+    padding-bottom: 9rem;
+  }
+}
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 900px) {
+  .navbar-006__menu {
+    background: rgba(248, 246, 241, 0.98);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+  }
+
+  /*
+    Mobile dropdown links stay navy whether or not
+    the navbar has scrolled.
+  */
+  .navbar-006 .navbar-006__menu a,
+  .navbar-006.is-scrolled .navbar-006__menu a {
+    color: var(--color-primary);
+  }
+
+  .navbar-006 .navbar-006__menu a:hover,
+  .navbar-006 .navbar-006__menu a:focus-visible,
+  .navbar-006.is-scrolled .navbar-006__menu a:hover,
+  .navbar-006.is-scrolled .navbar-006__menu a:focus-visible {
+    color: var(--color-accent);
+  }
+
+  .navbar-006 .navbar-006__menu a::after,
+  .navbar-006.is-scrolled .navbar-006__menu a::after {
+    background: var(--color-accent);
+  }
+
+  .navbar-006__menu a {
+    width: 100%;
+    padding: 0.9rem 0.75rem;
+  }
+}
