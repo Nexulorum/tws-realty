@@ -18,7 +18,7 @@
       rgba(35, 64, 106, 0.58),
       rgba(35, 64, 106, 0.72)
     ),
-    url("../images/hero-img.webp") center / cover no-repeat;
+    url("../images/rental-hero-img.webp") center / cover no-repeat;
 
   overflow: hidden;
 }
