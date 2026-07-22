@@ -337,83 +337,82 @@
             </div>
 
             <form
-            class="contact-001__form"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            action="/thank-you.html"
+          class="contact-001__form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you.html"
         >
+          <!-- Required for Netlify -->
+          <input type="hidden" name="form-name" value="contact">
 
-            <!-- Required for Netlify -->
-            <input type="hidden" name="form-name" value="contact">
+          <!-- Honeypot Spam Protection -->
+          <p hidden>
+              <label>
+                  Don't fill this out if you're human:
+                  <input name="bot-field">
+              </label>
+          </p>
 
-            <!-- Honeypot Spam Protection -->
-            <p hidden>
-                <label>
-                    Don't fill this out if you're human:
-                    <input name="bot-field">
-                </label>
-            </p>
+          <label>
+              Name
+              <input
+                  type="text"
+                  name="name"
+                  required
+                  data-required
+              >
+          </label>
 
-            <label>
-                Name
-                <input
-                    type="text"
-                    name="name"
-                    required
-                    data-required
-                >
-            </label>
+          <label>
+              Email
+              <input
+                  type="email"
+                  name="email"
+                  required
+                  data-required
+                  data-email
+              >
+          </label>
 
-            <label>
-                Email
-                <input
-                    type="email"
-                    name="email"
-                    required
-                    data-required
-                    data-email
-                >
-            </label>
+          <label>
+              Phone (Optional)
+              <input
+                  type="tel"
+                  name="phone"
+              >
+          </label>
 
-            <label>
-                Phone (Optional)
-                <input
-                    type="tel"
-                    name="phone"
-                >
-            </label>
+          <label>
+              I'm Interested In
+              <select name="interest">
+                  <option value="">Select One</option>
+                  <option>Long-Term Rental</option>
+                  <option>Short-Term Rental</option>
+                  <option>Section 8</option>
+                  <option>General Question</option>
+              </select>
+          </label>
 
-            <label>
-                I'm Interested In
-                <select name="interest">
-                    <option value="">Select One</option>
-                    <option>Long-Term Rental</option>
-                    <option>Short-Term Rental</option>
-                    <option>Section 8</option>
-                    <option>General Question</option>
-                </select>
-            </label>
+          <label>
+              Message
+              <textarea
+                  name="message"
+                  rows="6"
+                  required
+                  data-required
+              ></textarea>
+          </label>
 
-            <label>
-                Message
-                <textarea
-                    name="message"
-                    rows="6"
-                    required
-                    data-required
-                ></textarea>
-            </label>
+          <p class="form-message" data-form-message></p>
 
-            <p class="form-message" data-form-message></p>
-
-            <button
-                class="btn btn-primary"
-                type="submit"
-            >
-                Get In Touch
-            </button>
+          <button
+              class="btn btn-primary"
+              type="submit"
+          >
+              Get In Touch
+          </button>
 
         </form>
 
